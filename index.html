@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Phishing Awareness Training</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🛡️ PhishGuard
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#phishing">Phishing</a></li>
+                <li><a href="#emails">Emails</a></li>
+                <li><a href="#websites">Websites</a></li>
+                <li><a href="#social">Social Engineering</a></li>
+                <li><a href="#safety">Safety</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h1>Phishing Awareness Training</h1>
+
+            <p>
+                Learn how to identify phishing attacks,
+                recognize suspicious emails and websites,
+                and protect your personal information.
+            </p>
+
+            <a href="#phishing" class="btn">
+                Start Training
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Introduction -->
+    <section id="phishing" class="section">
+
+        <h2>What is Phishing?</h2>
+
+        <div class="content-box">
+
+            <p>
+                <strong>Phishing</strong> is a type of cyberattack where
+                attackers pretend to be a trusted person, company, or
+                organization to trick people into revealing sensitive
+                information.
+            </p>
+
+            <p>
+                Attackers may try to steal passwords, banking information,
+                account credentials, or other personal information.
+            </p>
+
+        </div>
+
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">📧</div>
+                <h3>Email Phishing</h3>
+                <p>
+                    Fraudulent emails designed to trick users into
+                    clicking links or sharing information.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📱</div>
+                <h3>Smishing</h3>
+                <p>
+                    Phishing attacks delivered through SMS or
+                    messaging applications.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📞</div>
+                <h3>Vishing</h3>
+                <p>
+                    Fraudulent phone calls used to obtain sensitive
+                    information.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌐</div>
+                <h3>Website Phishing</h3>
+                <p>
+                    Fake websites designed to look like legitimate
+                    websites.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Phishing Email Section -->
+    <section id="emails" class="section alternate">
+
+        <h2>How to Recognize Phishing Emails</h2>
+
+        <div class="email-example">
+
+            <div class="email-header">
+                <span>📧 Suspicious Email Example</span>
+            </div>
+
+            <div class="email-body">
+
+                <p><strong>From:</strong> security-alert@example-security.com</p>
+
+                <p><strong>Subject:</strong> URGENT! Your account will be suspended</p>
+
+                <hr>
+
+                <p>Hello Customer,</p>
+
+                <p>
+                    We detected unusual activity on your account.
+                    Your account will be suspended within 24 hours.
+                </p>
+
+                <p>
+                    Click the link below immediately to verify your account.
+                </p>
+
+                <button class="danger-button"
+                        onclick="showWarning()">
+                    Verify Account
+                </button>
+
+                <p>
+                    Thank you,<br>
+                    Security Team
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div id="warningMessage" class="warning-message">
+            ⚠️ This is a simulated phishing example.
+            Never click suspicious links without verifying the sender
+            and destination.
+        </div>
+
+
+        <h3 class="subheading">
+            Warning Signs in Phishing Emails
+        </h3>
+
+        <div class="warning-grid">
+
+            <div>
+                <span>🚨</span>
+                <h4>Urgent Language</h4>
+                <p>
+                    Attackers may create fear or urgency to make you
+                    act without thinking.
+                </p>
+            </div>
+
+            <div>
+                <span>🔗</span>
+                <h4>Suspicious Links</h4>
+                <p>
+                    Links may lead to websites that are unrelated to
+                    the organization they claim to represent.
+                </p>
+            </div>
+
+            <div>
+                <span>👤</span>
+                <h4>Unknown Sender</h4>
+                <p>
+                    Check the sender's address carefully.
+                </p>
+            </div>
+
+            <div>
+                <span>📝</span>
+                <h4>Unexpected Attachments</h4>
+                <p>
+                    Unexpected attachments can be dangerous.
+                </p>
+            </div>
+
+            <div>
+                <span>🔐</span>
+                <h4>Password Requests</h4>
+                <p>
+                    Legitimate organizations generally should not
+                    ask for your password through email.
+                </p>
+            </div>
+
+            <div>
+                <span>❌</span>
+                <h4>Spelling Errors</h4>
+                <p>
+                    Poor grammar or unusual wording can be a warning
+                    sign, although professional-looking scams also exist.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Fake Websites -->
+    <section id="websites" class="section">
+
+        <h2>How to Identify Fake Websites</h2>
+
+        <p class="section-intro">
+            Fake websites often imitate trusted services.
+            Check the website carefully before entering sensitive information.
+        </p>
+
+        <div class="website-comparison">
+
+            <div class="website fake">
+
+                <div class="browser-bar">
+                    🌐 suspicious-example.com
+                </div>
+
+                <h3>⚠️ Suspicious Website</h3>
+
+                <ul>
+                    <li>❌ Strange domain name</li>
+                    <li>❌ Unexpected login request</li>
+                    <li>❌ Poor or unusual design</li>
+                    <li>❌ Pressure to act immediately</li>
+                    <li>❌ Suspicious links</li>
+                </ul>
+
+            </div>
+
+
+            <div class="website safe">
+
+                <div class="browser-bar">
+                    🔒 Official website
+                </div>
+
+                <h3>✅ Safer Website Practices</h3>
+
+                <ul>
+                    <li>✅ Check the domain carefully</li>
+                    <li>✅ Use bookmarks for important websites</li>
+                    <li>✅ Verify the website independently</li>
+                    <li>✅ Look for HTTPS, but don't rely on HTTPS alone</li>
+                    <li>✅ Avoid links from unexpected messages</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="tip-box">
+
+            <h3>💡 Website Safety Tip</h3>
+
+            <p>
+                Instead of clicking a login link in an unexpected email,
+                open your browser and navigate to the organization's
+                official website yourself.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Social Engineering -->
+    <section id="social" class="section alternate">
+
+        <h2>Social Engineering Tactics</h2>
+
+        <p class="section-intro">
+            Social engineering manipulates people rather than
+            directly attacking computer systems.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">⏰</div>
+                <h3>Urgency</h3>
+                <p>
+                    "Act immediately or your account will be closed."
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">😨</div>
+                <h3>Fear</h3>
+                <p>
+                    Attackers may use threats or frightening messages
+                    to pressure victims.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🎁</div>
+                <h3>Reward</h3>
+                <p>
+                    Fake prizes, offers, or rewards may be used
+                    to attract victims.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">👔</div>
+                <h3>Impersonation</h3>
+                <p>
+                    Attackers may pretend to be managers, banks,
+                    delivery services, or technical support.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Real World Examples -->
+    <section id="examples" class="section">
+
+        <h2>Real-World Phishing Examples</h2>
+
+        <div class="example-list">
+
+            <div class="real-example">
+
+                <h3>📧 Email Account Scam</h3>
+
+                <p>
+                    Attackers send messages claiming that an email
+                    account has a security problem and ask the user
+                    to sign in through a provided link.
+                </p>
+
+                <strong>Lesson:</strong>
+                Verify unexpected security messages independently.
+
+            </div>
+
+
+            <div class="real-example">
+
+                <h3>🏦 Banking Scam</h3>
+
+                <p>
+                    A message may claim that a bank account has been
+                    locked and ask the recipient to confirm account
+                    details through a link.
+                </p>
+
+                <strong>Lesson:</strong>
+                Contact your bank using an official phone number or
+                website rather than the information in the message.
+
+            </div>
+
+
+            <div class="real-example">
+
+                <h3>📦 Delivery Scam</h3>
+
+                <p>
+                    A fake delivery notification may claim that a package
+                    cannot be delivered and request payment or personal
+                    information.
+                </p>
+
+                <strong>Lesson:</strong>
+                Check delivery information through the courier's
+                official website or application.
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Safety -->
+    <section id="safety" class="section alternate">
+
+        <h2>How to Stay Safe</h2>
+
+        <div class="safety-list">
+
+            <div class="safety-item">
+                <span>1</span>
+                <div>
+                    <h3>Think Before You Click</h3>
+                    <p>
+                        Do not click unexpected links or attachments.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="safety-item">
+                <span>2</span>
+                <div>
+                    <h3>Verify the Sender</h3>
+                    <p>
+                        Check the sender's address carefully.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="safety-item">
+                <span>3</span>
+                <div>
+                    <h3>Use Multi-Factor Authentication</h3>
+                    <p>
+                        MFA provides an additional layer of account protection.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="safety-item">
+                <span>4</span>
+                <div>
+                    <h3>Use Strong Passwords</h3>
+                    <p>
+                        Use unique passwords for different accounts.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="safety-item">
+                <span>5</span>
+                <div>
+                    <h3>Keep Software Updated</h3>
+                    <p>
+                        Install security and software updates regularly.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="safety-item">
+                <span>6</span>
+                <div>
+                    <h3>Report Suspicious Messages</h3>
+                    <p>
+                        Report suspected phishing messages to your
+                        organization or service provider.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Quiz -->
+    <section id="quiz" class="section quiz-section">
+
+        <h2>🧠 Phishing Awareness Quiz</h2>
+
+        <p class="section-intro">
+            Test your knowledge of phishing and online safety.
+        </p>
+
+
+        <div class="quiz-container">
+
+            <div class="progress-container">
+
+                <div class="progress-text">
+                    Question <span id="questionNumber">1</span>
+                    of <span id="totalQuestions">5</span>
+                </div>
+
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+
+            </div>
+
+
+            <div id="quizContent">
+
+                <h3 id="question">
+                    Loading question...
+                </h3>
+
+                <div id="answers"></div>
+
+                <button id="nextButton"
+                        class="btn next-btn"
+                        onclick="nextQuestion()"
+                        disabled>
+                    Next Question
+                </button>
+
+            </div>
+
+
+            <div id="result" class="result" style="display:none;">
+
+                <h2>🎉 Quiz Completed!</h2>
+
+                <p>
+                    Your score is:
+                </p>
+
+                <div id="score" class="score">
+                    0/5
+                </div>
+
+                <p id="resultMessage"></p>
+
+                <button class="btn"
+                        onclick="restartQuiz()">
+                    Restart Quiz
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>🛡️ PhishGuard</h3>
+
+            <p>
+                Phishing Awareness Training
+            </p>
+
+            <p>
+                Learn • Identify • Verify • Protect
+            </p>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 PhishGuard | Educational Cybersecurity Project
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
